@@ -1,0 +1,441 @@
+/*Universal selectors*/
+* {
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #00081d;
+  color: white;
+  font-family: system-ui;
+}
+/*Universal selectors*/
+
+/* ----------------------------------- */
+
+/*background-IMAGE*/
+.background-Img {
+  background-image: linear-gradient(to top, transparent, rgba(0, 8, 29, 0.686)),
+    linear-gradient(to bottom, transparent, rgb(0, 8, 29) 100%),
+    url("Netflix\ background\ hero2.png");
+  height: 170vh;
+  background-size: cover;
+  background-position: center;
+  padding: 10px 7%;
+}
+/*background-IMAGE*/
+
+/* ----------------------------------- */
+
+/* All Nav design start*/
+nav {
+  /* Have put a flex on navbar here */
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+
+/* logo */
+.logo > img {
+  width: 15rem;
+}
+/* logo */
+
+/* Nav-Buttons */
+.navbar-buttons {
+  position: relative;
+  top: 10px;
+}
+
+.nav-select {
+  border: 1px solid rgb(98, 98, 98);
+  background-color: #0906266a;
+  border-radius: 3px;
+  font-size: 1rem;
+  padding: 2px 25px;
+  color: white;
+  appearance: none;
+  line-height: 1.5rem;
+}
+
+#sign-in {
+  color: white;
+  background-color: red;
+  border: none;
+  padding: 4px 16px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-family: sans-serif;
+  font-weight: bold;
+  height: 32px;
+  margin-left: 0.6em;
+}
+
+/* Nav- buttons */
+
+/* All nav design end Nav */
+
+/* --------------------------------------- */
+
+/* Text styles start*/
+
+.hero-text {
+  font-size: 3rem;
+  margin-top: 5rem;
+  margin-right: 15rem;
+  line-height: 1.2;
+  font-weight: 900;
+}
+
+.hero-small-text {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-block-start: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  .hero-text {
+    margin-right: 1rem;
+    font-size: 1rem;
+    font-size: 1.2rem;
+  }
+
+  .hero-small-text {
+    font-size: 1.125rem;
+    font-weight: bold;
+  }
+}
+
+/* Text styles end*/
+
+/* gradient box & inner form start */
+
+.text-container-and-gradient-box {
+  display: flex;
+  flex-direction: column;
+  font-family: system-ui;
+  color: white;
+  margin-left: 5%;
+}
+
+.gradient-border {
+  margin-block-start: 20px;
+  background: linear-gradient(to right, red 1%, blue);
+  padding: 5px;
+  border-radius: 5px;
+  margin-right: 80px;
+  min-width: 300px;
+}
+
+.inner-color {
+  font-family: system-ui;
+  background: rgb(0, 8, 29);
+  color: white;
+  padding: 25px;
+  font-size: 1.5em;
+}
+
+/* inner form */
+.form {
+  margin-block-start: 20px;
+  display: flex;
+  gap: 3px;
+  flex-wrap: wrap;
+}
+
+#Input {
+  font-family: system-ui;
+  width: 15.625em;
+  min-width: 100px;
+  height: 40px;
+  background-color: black;
+  border: 1px solid white;
+  border-radius: 5px;
+  color: white;
+  font-size: 15px;
+  padding: 8px 8px 0 8px;
+  position: relative;
+}
+
+.placeholder {
+  font-size: 14px;
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 10px;
+  transition: 0.3s;
+}
+
+input:focus + .placeholder {
+  margin-top: 1px;
+  font-size: 10px;
+}
+
+button {
+  height: 40px;
+  margin-left: 3px;
+  position: relative;
+  background-color: red;
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
+/* inner form */
+
+/* gradient box & inner form end */
+
+/*text-container-and-gradient-box*/
+
+/*----------------------------------------*/
+
+/* Feature boxes start */
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.box {
+  background-color: #090626;
+  border-radius: 5px;
+  margin-top: 150px;
+}
+
+.feature-row {
+  display: flex;
+  margin: 0 5%;
+}
+
+.feature-row-reverse {
+  display: flex;
+  margin: 0 5%;
+}
+
+.feature-text > h3 {
+  width: 100%;
+  color: white;
+  font-family: system-ui;
+  margin: 5% 5%;
+  font-weight: 900;
+  font-size: 3rem;
+}
+
+.feature-text > p {
+  margin: 0 5%;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+hr {
+  border-color: #494949;
+  width: 80%;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 899px) {
+  .feature-row {
+    flex-direction: column;
+  }
+  .feature-row-reverse {
+    flex-direction: column-reverse;
+  }
+  .feature-text > h3 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Feature boxes end */
+
+/*----------------------------------------*/
+
+/* accordian-container start */
+
+.accordian-container {
+  margin: 0 10%;
+  margin-top: 10rem;
+}
+
+.accordian-container > h2 {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 700;
+  font-family: system-ui;
+  margin-block-end: 1.2rem;
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+/* Styling the accordion buttons */
+.accordion {
+  width: 100%;
+  height: 5rem;
+  background-color: #132144;
+  color: #fff;
+  font-size: 20px;
+  padding: 18px 20px;
+  margin-bottom: 5px;
+  text-align: left;
+  /*  To push the plus sign to the right  */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* accordian on hover */
+
+.accordion:hover {
+  background-color: #223362;
+}
+
+/* adding the "plus" sign (+) */
+.accordion::after {
+  content: "\02795";
+  font-size: 20px;
+  color: #fff;
+}
+.panel {
+  background-color: #132144;
+  color: #fff;
+  margin-bottom: 6px;
+  overflow: hidden;
+  transition: max-height 0.33s cubic-bezier(0.5, 0, 0.1, 1);
+}
+.panel > p {
+  font-size: 20px;
+  padding: 10px 20px;
+  font-family: system-ui;
+}
+.panel-closed {
+  max-height: 0;
+  overflow: hidden;
+}
+.panel-open {
+  max-height: 700px;
+}
+/* active class for accordion, adds the "cross sign (x)" */
+.accordion-active::after {
+  content: "\274C";
+}
+
+/* accordian-Container end */
+
+/* ________________________________________________________________________________ */
+
+#select2 {
+  border: 1px solid rgb(98, 98, 98);
+  background-color: #000000;
+  border-radius: 3px;
+  font-size: 1rem;
+  padding: 2px 25px;
+  color: white;
+  appearance: none;
+  line-height: 1.5rem;
+  margin-top: 5rem;
+}
+
+option {
+  background-color: white;
+}
+
+/* ________________________________________________________________________________ */
+
+/* small sign-in start */
+
+.small-signin {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.get-started {
+  border: none;
+  background-color: red;
+  border-radius: 5px;
+  padding: 0 16px;
+  color: white;
+  font-weight: 700;
+  font-size: 1rem;
+  font-family: system-ui;
+}
+
+.get-started:hover {
+  background-color: #c11119;
+}
+
+.smallsignin > h3 {
+  font-size: 1.2rem;
+  font-family: system-ui;
+  margin-block: 1rem;
+}
+
+#input-2 {
+  position: relative;
+  height: 2.5rem;
+  width: 13rem;
+  border-radius: 3px;
+  border: 1px solid green;
+  background: #1c2943;
+  padding-top: 1rem;
+  padding-left: 5px;
+}
+
+.placeholder {
+  font-family: system-ui;
+  font-size: 0.7rem;
+  position: absolute;
+  margin-left: 7px;
+}
+
+/* small sign-in end */
+
+/* footer-container start */
+
+.footer {
+  margin: 10rem 0 0 0;
+}
+
+.footer * {
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+ul {
+  margin-top: 3rem;
+  padding-left: 0;
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+ul > * {
+  flex: 0 0 20%;
+  margin-right: 30px;
+}
+
+@media screen and (max-width: 600px) {
+  nav {
+    margin-top: 0.5rem;
+  }
+  .logo > img {
+    width: 6rem;
+    margin-top: 0.5em;
+  }
+}
+
+@media (max-width: 950px) {
+  ul > * {
+    flex: 0 0 30%;
+    margin-right: 30px;
+  }
+}
+
+@media (max-width: 599px) {
+  ul {
+    flex-direction: column;
+  }
+}
+
+/* footer-container end */
